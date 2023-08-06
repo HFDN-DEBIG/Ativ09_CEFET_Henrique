@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Números</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="calculator-solid-240.png" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <h2>Selecione a Função</h2>
+        <label>
+            <input type="radio" name="opcao" value="soma_media" checked>
+            Calcular Soma e Média
+        </label>
+        <label>
+            <input type="radio" name="opcao" value="soma_impares">
+            Calcular Soma dos Ímpares
+        </label>
+        <input type="number" id="quantidade" min="2" placeholder="Informe quantos números">
+        <button onclick="adicionarInputs()">Próximo</button>
+        <div id="inputs"></div>
+        <button onclick="calcular()">Calcular</button>
+        <p id="resultado"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
